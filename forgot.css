@@ -16,8 +16,8 @@
     align-items: center;
 }
 .forgot-form{
-    width: 500px;
-    min-height: 500px;
+    width: 450px;
+    min-height: 400px;
      background: transparent;
     backdrop-filter: blur(20px);
     display: flex;
@@ -48,4 +48,55 @@
 .fa-user-lock{
     color: #fff;
     font-size: 3em;
+}
+
+.p{
+    width: 100%;
+}
+.p p{
+    color: #fff;
+    text-align: center;
+}
+.form form{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input{
+    padding: 15px 7px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+form input::placeholder{
+    text-align: left;
+    padding-left: 10px;
+}
+
+form button{
+    padding: 15px 0;
+    background: #fff ;
+    color: #000000;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+form button:hover{
+    transform: scale(0.97);
+}
+.back{
+    width: 100%;
+    text-align: center;
+}
+.back a{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
 }

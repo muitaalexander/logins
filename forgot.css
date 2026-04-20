@@ -65,17 +65,34 @@
     flex-direction: column;
     gap: 15px;
 }
-form input{
+
+.input-container{
+    width: 100%;
+    position: relative;
+}
+.input-container input{
+    width: 100%;
     padding: 15px 7px;
     background: transparent;
     color: #fff;
     border: 1px solid gray;
     border-radius: 10px;
     outline: none;
+}  
+.input-container i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    font-size: 1.2em;
 }
+
+
 form input::placeholder{
     text-align: left;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 form button{

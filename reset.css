@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.forgot-container{
+.reset-container{
     width: 100%;
     min-height: 100vh;
     background-color: #292b29;
@@ -51,13 +51,6 @@
     font-size: 3em;
 }
 
-.p{
-    width: 100%;
-}
-.p p{
-    color: #fff;
-    text-align: center;
-}
 .form form{
     width: 100%;
     padding: 20px;

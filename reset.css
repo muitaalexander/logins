@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
 }
-.forgot-form{
+.reset-form{
     width: 450px;
     min-height: 400px;
      background: transparent;
@@ -46,9 +46,9 @@
     align-items: center;
     margin: 20px auto;
 }
-.fa-user-lock{
+.fa-unlock-keyhole{
     color: #15c515;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .form form{
@@ -65,9 +65,10 @@
 }
 .input-container input{
     width: 100%;
-    padding: 15px 7px;
+   padding: 15px 10px 15px 35px; 
     background: transparent;
     color: #fff;
+    text-align:justify;
     border: 1px solid #808080;
     border-radius: 10px;
     outline: none;
@@ -75,9 +76,9 @@
 .input-container i{
     position: absolute;
     top: 50%;
-    right:10px;
+    left:10px;
     transform: translateY(-50%);
-    color: #fff;
+    color: #b8b5b5;
     pointer-events: none;
     font-size: 1.2em;
 }
@@ -85,15 +86,14 @@
 
 form input::placeholder{
     text-align: left;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 form button{
     padding: 15px 0;
     background: #15c515 ;
     color: #000000;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1em;
+    font-size: 1.2em;
     border: none;
     border-radius: 10px;
     cursor: pointer;

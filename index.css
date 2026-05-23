@@ -85,7 +85,7 @@ section{
 /*--Home section--*/
 .home{
     height: 85vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/create-acc.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/setup.jpg);
     background-position:  center;
     background-repeat: no-repeat;
     background-size: cover;

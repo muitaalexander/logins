@@ -13,10 +13,10 @@
         <div class="nav-container">
         <div class="nav">
 
-          <h3><a href="#">Tech<span>Touch</span></a></h3>
+          <h3><a href="index.html">Tech<span>Touch</span></a></h3>
           
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Contact</a></li>
@@ -26,6 +26,7 @@
         </div>
       </div>
       
+
         <div class="login-form">
             <div class="icon">
               <i class="fa-solid fa-cloud-sun"></i>
@@ -35,20 +36,20 @@
                 <p>Sign In to access your guided mediations, daily practices, and personal journey.</p>
             </div>
             <div class="form">
-                <form>
+                <form id="login_form" method="post">
                     <div class="logins">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Enter Your Email" required>
+                        <input type="email" placeholder="Enter Your Email" id="email" >
                     </div>
 
                     <div class="logins">
                         <label for="password">Password</label>
-                        <input type="password" placeholder="Enter Your Password" required>
+                        <input type="password" placeholder="Enter Your Password" id="password">
                     </div>
 
                     <div class="check">
                         <div class="check-left">
-                           <input type="checkbox">
+                           <input type="checkbox" id="checkbox">
                            <p>Remember Me</p>
                         </div>
                         <div class="check-right">
@@ -64,7 +65,7 @@
                             <hr style="flex: 1;">
                             <span>or</span>
                              <hr style="flex: 1;">
-                            </div>
+                    </div>
 
 
                     <div class="btn google">

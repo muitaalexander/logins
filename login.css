@@ -69,7 +69,7 @@ ul li:nth-child(5) a{
 }
 .login-form{
     width: 500px;
-    min-height: 70vh;
+    min-height: 60vh;
     margin: auto;
     margin-top: 11vh;
     background: transparent;

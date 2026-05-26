@@ -162,7 +162,7 @@ section{
     position: relative;
     bottom: 0;
     left: 0;
-    background: linear-gradient(rgba(10, 224, 10, 0.753), rgba(22, 160, 10, 0.719));
+    background: url(images/footer.jpg)
 }
 .footer-container footer{
     width: 95%;
@@ -181,19 +181,20 @@ section{
     flex-direction: column;
 }
 .footer-div h2{
-    color: orangered;
+    color: orange;
     margin-bottom:15px;
 }
 .footer-div a{
-    color: black;
+    color: #fff;
 }
-footer hr{
-    color: black;
+.footer-div p{
+    color: #fff;
 }
 .footer-below{
     margin: 15px;
 }
 .footer-below p{
+    color: #fff;
     text-align: center;
     font-weight: bold;
 }

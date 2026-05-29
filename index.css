@@ -1,36 +1,44 @@
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html,
-body{
+body {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
-   width: 100%;
+
+.container {
+    width: 100%;
     min-height: 100vh;
     background-color: aliceblue;
-    
+
     display: flex;
     flex-direction: column;
 }
 
 /*----------navbar ------------------*/
-.nav-container{
+.nav-container {
     width: 100%;
-    height: 10vh;
+    height: 9vh;
     background: rgb(77, 82, 76);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 }
-.nav{
+
+nav {
     width: 95%;
     height: 100%;
     margin: auto;
@@ -38,162 +46,214 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.nav h3 a{
+
+nav h3 a {
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Roboto;
     font-size: 1.4em;
     color: #16e216;
 }
-.nav h3 a span{
+
+nav h3 a span {
     color: orange;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Open sans;
 }
 
-.nav ul{
+nav ul {
     display: flex;
     gap: 25px;
 }
-ul li{
+
+ul li {
     list-style-type: none;
-   font-family: Arial, Helvetica, sans-serif;
+    font-family:  Roboto;
     font-size: 1.2em;
-    
+
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: #16e216;
+    position: relative;
 }
-ul li:nth-child(5) a{
+ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: orange;
+    transition: width 0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+
+ul li:nth-child(5) a {
     margin-left: 20px;
     font-weight: bold;
     padding: 5px 8px;
-    color: orange;
-    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
-
+ul li:nth-child(5) a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+}
 /*-----------SECTIONS-----------*/
-.page-sections{
-    margin-top: 10vh;
+.page-sections {
+    margin-top: 9vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
-  
+
 }
-section{
+
+section {
     width: 100%;
     min-height: 60vh;
     padding: 0 10px;
     background-color: #4b4b4b;
 }
+
 /*--Home section--*/
-#home{
+#home {
     height: 87vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/setup.jpg);
-    background-position:  center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/backgr.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
-#home h2{
-    margin-bottom: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
+
+#home h2 {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family:  Roboto;
+    font-size: 2.3em;
     font-weight: bold;
+    color: #ffffff;
+}
+
+#home h3{
+    font-family: Roboto;
+    font-size: 1.8em;
+    color: orange;
+    padding-left: 20px;
+}
+#home h3 span{
+    font-family: open sans;
     color: #16e216;
 }
-#home p{
-    width: 70%;
-    font-size: 1.1em;
-    text-align: center;
+#home p {
+    font-size: 1.2em;
+    font-family: Roboto;
     color: #fff;
+    padding-left: 20px;
 }
-.home-btn{
+
+.home-btn {
     display: flex;
-    margin-top: 20px;
+    margin:25px 0 0 20px;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
+
 .home-btn a:nth-child(1) {
-    background-color: green ;
+    background-color: green;
     color: #fff;
     display: inline-block;
     padding: 10px 10px;
+    font-family: open sans;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
 }
-.home-btn a:nth-child(1):hover{
+
+.home-btn a:nth-child(1):hover {
     transform: translatey(5px);
     opacity: 0.75;
 }
-.home-btn a:nth-child(2){
+
+.home-btn a:nth-child(2) {
     background-color: orange;
     font-weight: bold;
     color: #fff;
     display: inline-block;
     padding: 10px 10px;
+     font-family: Roboto;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
 }
-.home-btn a:nth-child(2):hover{
+
+.home-btn a:nth-child(2):hover {
     transform: translatey(5px);
     opacity: 0.75;
 }
+
 /*--About section--*/
-#about{
+#about {}
 
-}
-#services{
+#services {}
 
-}
-#contact{
-
-}
+#contact {}
 
 /*-----Footer-------*/
-.footer-container{
+.footer-container {
     width: 100%;
     position: relative;
     bottom: 0;
     left: 0;
     background: url(images/footer.jpg)
 }
-.footer-container footer{
+
+.footer-container footer {
     width: 95%;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
 }
-.footer-upper{
+
+.footer-upper {
     margin: 15px 0;
     display: flex;
     justify-content: space-between;
-    align-items:start;
+    align-items: start;
 }
-.footer-div{
+
+.footer-div {
     display: flex;
     flex-direction: column;
 }
-.footer-div h2{
+
+.footer-div h2 {
     color: orange;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
-.footer-div a{
+
+.footer-div a {
     color: #fff;
 }
-.footer-div p{
+
+.footer-div p {
     color: #fff;
 }
-.footer-below{
+
+.footer-below {
     margin: 15px;
 }
-.footer-below p{
+
+.footer-below p {
     color: #fff;
     text-align: center;
     font-weight: bold;

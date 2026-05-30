@@ -31,7 +31,8 @@ a {
 .nav-container {
     width: 100%;
     height: 9vh;
-    background: rgb(77, 82, 76);
+    background:transparent;
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
@@ -116,7 +117,7 @@ ul li:nth-child(5) a::after {
 
 /*-----------SECTIONS-----------*/
 .page-sections {
-    margin-top: 9vh;
+    margin-top: -9vh;
     display: flex;
     flex-direction: column;
     gap: 10px;

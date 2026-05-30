@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -55,9 +54,15 @@ nav h3 a {
     color: #16e216;
 }
 
+nav h3 a img{
+    width: 45px;
+    height: 6vh;
+   
+}
+
 nav h3 a span {
     color: orange;
-    font-family:  Open sans;
+    font-family: Open sans;
 }
 
 nav ul {
@@ -67,7 +72,7 @@ nav ul {
 
 ul li {
     list-style-type: none;
-    font-family:  Roboto;
+    font-family: Roboto;
     font-size: 1.2em;
 
 }
@@ -77,7 +82,8 @@ ul li a {
     color: #16e216;
     position: relative;
 }
-ul li a::after{
+
+ul li a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -87,7 +93,8 @@ ul li a::after{
     background-color: orange;
     transition: width 0.3s ease;
 }
-ul li a:hover::after{
+
+ul li a:hover::after {
     width: 100%;
 }
 
@@ -100,11 +107,13 @@ ul li:nth-child(5) a {
     padding: 5px 10px;
     border-radius: 10px;
 }
-ul li:nth-child(5) a::after{
+
+ul li:nth-child(5) a::after {
     content: "";
     position: absolute;
     width: 0;
 }
+
 /*-----------SECTIONS-----------*/
 .page-sections {
     margin-top: 9vh;
@@ -118,7 +127,7 @@ section {
     width: 100%;
     min-height: 60vh;
     padding: 0 10px;
-    background-color: #4b4b4b;
+    background-color: #53966f;
 }
 
 /*--Home section--*/
@@ -138,22 +147,24 @@ section {
 #home h2 {
     margin-bottom: 10px;
     padding-left: 20px;
-    font-family:  Roboto;
+    font-family: Roboto;
     font-size: 2.3em;
     font-weight: bold;
     color: #ffffff;
 }
 
-#home h3{
+#home h3 {
     font-family: Roboto;
     font-size: 1.8em;
     color: orange;
     padding-left: 20px;
 }
-#home h3 span{
+
+#home h3 span {
     font-family: open sans;
     color: #16e216;
 }
+
 #home p {
     font-size: 1.2em;
     font-family: Roboto;
@@ -163,7 +174,7 @@ section {
 
 .home-btn {
     display: flex;
-    margin:25px 0 0 20px;
+    margin: 25px 0 0 20px;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -191,7 +202,7 @@ section {
     color: #fff;
     display: inline-block;
     padding: 10px 10px;
-     font-family: Roboto;
+    font-family: Roboto;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
@@ -215,7 +226,7 @@ section {
     position: relative;
     bottom: 0;
     left: 0;
-    background: url(images/footer.jpg)
+    background-color:  rgb(77, 82, 76);
 }
 
 .footer-container footer {
@@ -240,48 +251,60 @@ section {
 
 .footer-div h2 {
     color: orange;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
-.footer-div a {
+.footer-div a,
+.footer-div p{
+    font-size: 0.9em;
     color: #fff;
 }
 
-.footer-div p {
-    color: #fff;
-}
-
-.first h3{
+.first h3 {
     color: #16e216;
     font-family: Roboto;
     font-size: 1.7em;
 }
-.first h3 span{
+
+.first h3 span {
     color: orange;
 }
-.first p{
-    color:#fff;
+
+.first p {
+    color: #fff;
     font-size: 1em;
 }
-.first-icons{
+
+.first-icons {
     margin-top: 10px;
- display: flex;
- flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
-.first-icons p{
+
+.first-icons p {
     font-size: 1.1em;
     color: orange;
 
 }
-.first-icons a{
+
+.first-icons a,
+.fourth a {
     margin-bottom: 2px;
     font-family: Open sans;
     font-size: 1em;
     color: #fff;
 }
-.first-icons a i{
-    color: #929292;
-    margin-right: 10px;
+.first-icons a:hover,
+.second a:hover,
+.third a:hover,
+.fourth a:hover{
+   color: #53966f;
+}
+.first-icons a i,
+.fourth i {
+    color: #16e216;
+    margin:0 5px 10px 0;
     font-size: 1.3em;
 }
 
@@ -293,4 +316,24 @@ section {
     color: #fff;
     text-align: center;
     font-weight: bold;
+}
+
+.fifth-input{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.fifth-input input{
+    background: transparent;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 3px 2px;
+}
+.fifth-input button{
+    border: none;
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
 }

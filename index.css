@@ -31,7 +31,7 @@ a {
 .nav-container {
     width: 100%;
     height: 9vh;
-    background:transparent;
+    background: rgb(5, 41, 5);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -55,10 +55,10 @@ nav h3 a {
     color: #16e216;
 }
 
-nav h3 a img{
+nav h3 a img {
     width: 45px;
     height: 6vh;
-   
+
 }
 
 nav h3 a span {
@@ -117,23 +117,23 @@ ul li:nth-child(5) a::after {
 
 /*-----------SECTIONS-----------*/
 .page-sections {
-    margin-top: -9vh;
+    margin-top: 9vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+
 
 }
 
 section {
     width: 100%;
     min-height: 60vh;
-    padding: 0 10px;
+    padding: 10px 10px;
     background-color: #53966f;
 }
 
 /*--Home section--*/
 #home {
-    height: 87vh;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/backgr.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
 }
 
 #home h2 {
@@ -214,12 +214,230 @@ section {
     opacity: 0.75;
 }
 
-/*--About section--*/
-#about {}
+/*--About section----*/
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(4, 187, 4, 0.801));
+}
 
-#services {}
+.about-first {
+    width: 35%;
+}
 
-#contact {}
+.about-first img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.about-second {
+    width: 40%;
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-second h2 {
+    font-size: 2em;
+    color: orange;
+
+
+}
+
+.about-second h3 {
+    font-size: 1.8em;
+    color: orange;
+}
+
+.about-second h3 span {
+    color: #16e216;
+}
+
+.about-second p {
+    line-height: 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+
+}
+
+.second-cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.card,
+.cards {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.card:hover {
+    transform: translatey(-5px);
+    background-color: #53966f;
+}
+
+.card i,
+.cards i {
+    font-size: 1.4em;
+    align-self: center;
+    color: #16e216;
+}
+
+.card p,
+.cards p {
+    align-self: flex-start;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 12px;
+
+}
+
+.about-third {
+    width: 20%;
+    margin-left: 20px;
+}
+
+.third-cards {
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cards {
+    background-color: #000;
+    transition: 0.5s ease;
+}
+
+.cards:hover {
+    transform: translatex(-5px);
+    opacity: 0.7;
+}
+
+.cards span {
+    font-size: 1.5em;
+    color: orange;
+}
+
+/*----CONTACT------------*/
+#contact {
+    background:#fff;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 10px 5px;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-left h2 {
+    font-size: 1.8em;
+    color: orange;
+}
+.contact-left h2 span{
+    color: #16e216;
+}
+.contact-links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-links a{
+    padding: 15px 10px;
+    background-color:#052905;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+.contact-links a i{
+   color: #16e216;
+    font-size: 1.7em;
+    align-self: center;
+}
+.contact-links a p{
+   margin-left: 10px;
+}
+.contact-links a p span{
+    font-size: 1.2em;
+    color: orange;
+}
+.contact-form{
+    box-shadow:4px 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    background-color:#052905;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.grid-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.contact-form input{
+   padding: 15px 8px;
+   background-color: transparent;
+   color: #fff;
+   border-radius: 10px;
+   border: 1px solid orange;
+   outline: none;
+}
+.contact-form textarea{
+     height: 12vh;
+     resize: none;
+     padding-left: 10px;
+     border: 1px solid orange;
+     line-height: 1.2em;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+}
+.contact-form button{
+    padding: 10px 5px;
+    background-color: #16e216;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact-form button i{
+    font-size: 1.5em;
+    color: #fff;
+    padding-right: 10px;
+}
+
 
 /*-----Footer-------*/
 .footer-container {
@@ -227,7 +445,7 @@ section {
     position: relative;
     bottom: 0;
     left: 0;
-    background-color:  rgb(77, 82, 76);
+    background: #052905;
 }
 
 .footer-container footer {
@@ -257,7 +475,7 @@ section {
 }
 
 .footer-div a,
-.footer-div p{
+.footer-div p {
     font-size: 0.9em;
     color: #fff;
 }
@@ -296,16 +514,18 @@ section {
     font-size: 1em;
     color: #fff;
 }
+
 .first-icons a:hover,
 .second a:hover,
 .third a:hover,
-.fourth a:hover{
-   color: #53966f;
+.fourth a:hover {
+    color: #53966f;
 }
+
 .first-icons a i,
 .fourth i {
     color: #16e216;
-    margin:0 5px 10px 0;
+    margin: 0 5px 10px 0;
     font-size: 1.3em;
 }
 
@@ -319,19 +539,22 @@ section {
     font-weight: bold;
 }
 
-.fifth-input{
+.fifth-input {
     margin-top: 10px;
     display: flex;
     gap: 15px;
 }
-.fifth-input input{
+
+.fifth-input input {
     background: transparent;
     color: #fff;
     border: 1px solid orange;
     border-radius: 10px;
     padding: 3px 2px;
+    outline: none;
 }
-.fifth-input button{
+
+.fifth-input button {
     border: none;
     background-color: orange;
     color: #fff;

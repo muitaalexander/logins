@@ -79,8 +79,10 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #16e216;
+    color: orange;
     position: relative;
+    font-family: Roboto;
+    font-weight: bold;
 }
 
 ul li a::after {
@@ -335,7 +337,7 @@ section {
 }
 /*-----SERVICES---------*/
 #services {
-  background: #052905; 
+  background: #0c520c; 
 }
 .services-container {
     width: 100%;

@@ -754,7 +754,7 @@ section {
     color: #fff;
     border: 1px solid orange;
     border-radius: 10px;
-    padding: 3px 2px;
+    padding: 5px 5px;
     outline: none;
 }
 
@@ -764,4 +764,9 @@ section {
     color: #fff;
     padding: 10px;
     border-radius: 10px;
+    transition: 0.5s ease;
+}
+.fifth-input button:hover{
+     transform: translatex(-5px);
+    background-color: #052905;
 }

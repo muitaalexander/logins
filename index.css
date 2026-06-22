@@ -516,7 +516,7 @@ section {
 
 .contact-links-left a:hover,
 .contact-links-right a:hover {
-    transform: translateY(-5px);
+    transform: translatex(-5px);
     background-color: #13522d;
 }
 
@@ -558,7 +558,6 @@ section {
 
 .contact-form {
     box-shadow: 4px 5px 9px#9ea79e;
-    ;
     padding: 10px;
     background-color: #052905;
     border-radius: 10px;

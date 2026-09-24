@@ -13,6 +13,9 @@ body {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
+body {
+  background: linear-gradient(to right, #000a03,  #034e03);
+}
 
 a {
     text-decoration: none;
@@ -23,6 +26,7 @@ a {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 /*----------navbar ------------------*/
@@ -132,7 +136,7 @@ section {
 #home {
     min-height: 97vh;
     margin-top: -10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/backgr.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/green.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +217,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #052905;
 }
 
 .about-first {
@@ -328,9 +331,6 @@ section {
 }
 
 /*-----SERVICES---------*/
-#services {
-    background: #0c520c;
-}
 
 .services-container {
     width: 100%;
@@ -452,9 +452,7 @@ section {
 
 
 /*----CONTACT------------*/
-#contact {
-    background: #052905;
-}
+
 
 
 .contact-container {
@@ -575,7 +573,7 @@ section {
     background-color: transparent;
     color: #fff;
     border-radius: 10px;
-    border: 1px solid orange;
+    border: 1px solid #16e216;
     outline: none;
 }
 
@@ -583,7 +581,7 @@ section {
     height: 10vh;
     resize: none;
     padding-left: 10px;
-    border: 1px solid orange;
+    border: 1px solid #16e216;
     line-height: 1.2em;
     background-color: transparent;
     color: #fff;
@@ -610,7 +608,7 @@ section {
 .contact-form button:hover {
     transform: translateX(5px);
     background-color: #678106;
-   
+
 }
 
 .contact-form button i {

@@ -187,7 +187,7 @@ ul li:nth-child(5) a::after {
     top: 50%;
     transform: translateY(-50%);
     margin-top: 10px;
-    color: #fff;
+    color: #0c722e;
     cursor: pointer;
 }
 

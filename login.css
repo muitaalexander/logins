@@ -164,6 +164,7 @@ ul li:nth-child(5) a::after {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -179,6 +180,15 @@ ul li:nth-child(5) a::after {
     border-radius: 10px;
     color: #fff;
     outline: none;
+}
+.logins i{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .logins input::placeholder {

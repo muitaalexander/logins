@@ -54,10 +54,8 @@ nav h3 a {
     color: #16e216;
 }
 
-nav h3 a img {
-    width: 45px;
-    height: 6vh;
-
+nav h3 a i {
+   color: #16e216;
 }
 
 nav h3 a span {
@@ -73,7 +71,7 @@ nav ul {
 ul li {
     list-style-type: none;
     font-family: Roboto;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
 }
 
@@ -81,8 +79,8 @@ ul li a {
     text-decoration: none;
     color: orange;
     position: relative;
-    font-family: Roboto;
-    font-weight: bold;
+    font-family: open sans;
+    font-weight:bold;
 }
 
 ul li a::after {

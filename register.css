@@ -184,8 +184,9 @@ form{
 }
 .registers{
     width: 100%;
-    
-    
+     background: transparent;
+     display: flex;
+     position: relative;
 }
 .registers input{
     width: 100%;
@@ -195,6 +196,18 @@ form{
     background: transparent;
     border: 1px solid #0c722e;
     outline: none;
+}
+.registers i{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0c722e;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.registers i:hover{
+    color: #16e216;
 }
 .register input::placeholder,
 .registers input::placeholder{

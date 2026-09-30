@@ -187,8 +187,11 @@ ul li:nth-child(5) a::after {
     margin-top: 10px;
     color: #0c722e;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
-
+.logins i:hover{
+    color: #16e216;
+}
 .logins input::placeholder {
     text-align: left;
     padding-left: 10px;

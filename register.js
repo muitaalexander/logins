@@ -27,3 +27,18 @@ toggle_Confirm_Password.addEventListener('click', function(){
         toggleConfirmPassword.classList.add('fa-eye');
     }
 }); 
+
+const validation = formSelector =>{
+    const formElement = document.querySelector(formSelector);
+
+    formElement.setAttribute('novalidate', '');
+
+    formElement.addEventListener('submit', event =>{
+        event.preventDefault();
+    });
+
+    
+};
+
+validationForm('#register-form');
+
